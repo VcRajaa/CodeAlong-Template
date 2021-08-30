@@ -45,7 +45,7 @@ namespace CodeAlong_Template.Controllers
                 else
                 {
                     ViewData["Message"] = "You have not  fever ";
-                    if (model.Ishypothermia && (model.CheckFever <= 95))
+                    if ((model.CheckFever <= 95))
                     {
                         ViewData["shypothermia"] = "but hypothermia";
                     }
@@ -65,7 +65,7 @@ namespace CodeAlong_Template.Controllers
                 else
                 {
                     ViewData["Message"] = "You have not  fever ";
-                    if (model.Ishypothermia && (model.CheckFever <= 35))
+                    if ((model.CheckFever <= 35))
                     {
                         ViewData["shypothermia"] = "but hypothermia";
                     }
