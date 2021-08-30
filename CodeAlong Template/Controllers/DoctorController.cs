@@ -31,7 +31,7 @@ namespace CodeAlong_Template.Controllers
         [Route("/FeverCheck")]
         public ActionResult FeverCheck(Fever model)
         {
-            if (FeverStatic.IsValid(model.CheckFever))
+            if (!FeverStatic.IsValid(model.CheckFever))
             {
                 ViewData["Message"] = "Please enter temperature level";
                 return View();
